@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">
+            <h2>IBAMS <br>BRACELETS</h2>
+            <p>THE HOME OF COMFORT</p>
+        </div>
+        <div class="nav-links">
+            <a href="home/index.html">Home</a>
+            <a href="/products/index.html">Products</a>
+            <a href="/contact/index.html">Contact</a>
+            <div class="form">
+                <a href="/login/index.html">Login</a>
+                <a href="/register/index.html">Register</a>
+            </div>
+            <a href="/cart/index.html" class="cart" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+            </a>
+            <div class="profile">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content product-detail-content">
+        <a href="/products/index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to Products
+        </a>
+        
+        <div class="product-detail-container">
+            <div class="product-image-section">
+                <img id="product-image" src="" alt="Product Image" class="product-detail-image">
+            </div>
+            
+            <div class="product-info-section">
+                <h1 id="product-title">Product Title</h1>
+                <div class="product-price-detail" id="product-price">$0.00</div>
+                
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p id="product-desc">Premium quality bracelet crafted with care and attention to detail.</p>
+                </div>
+
+                <div class="product-actions-detail">
+                    <input type="number" id="product-qty" value="1" min="1" max="10">
+                    <button id="add-to-cart-btn" class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-specs">
+                    <h3>Specifications</h3>
+                    <ul>
+                        <li><strong>Material:</strong> <span id="product-material">Premium Beads</span></li>
+                        <li><strong>Size:</strong> <span id="product-size">Adjustable</span></li>
+                        <li><strong>Color:</strong> <span id="product-color">Multi-color</span></li>
+                        <li><strong>Care:</strong> Hand wash recommended</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/nav-offset.js"></script>
+    <script src="/assets/js/profile.js"></script>
+    <script src="/assets/js/cart-badge.js"></script>
+    <script src="/assets/js/cart-notify.js"></script>
+    <script src="product-detail.js"></script>
+    <footer class="site-footer">
+        <div class="container">© 2025 IBAMS — All rights reserved.</div>
+    </footer>
+</body>
+</html>

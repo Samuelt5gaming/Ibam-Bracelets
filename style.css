@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: #fafafa;
+  color: #222;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  display: flex;           
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav .brand {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.nav .brand h2 {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.nav .brand p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.nav .nav-links {
+  display: flex;
+  width: 100%;
+  max-width: 900px; 
+}
+
+.nav .nav-links a {
+    flex: 1;                 
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;      
+  text-align: center;      
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.nav .nav-links .form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 6px; 
+}
+.nav .nav-links .form a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.nav a:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.nav .brand p{
+  color: #fff;
+}
+
+.nav .profile img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 12px;
+  border: 2px solid rgba(255,255,255,0.12);
+}
+
+p{
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+
+.content {
+  justify-items: center;
+  max-width: 900px;
+  margin: 20px auto 40px; 
+  padding: var(--nav-offset, 120px) 20px 20px 20px;
+  transition: padding 200ms ease;
+}
+
+.content h1 {
+  margin-bottom: 12px;
+  font-size: 40px;
+}
+
+
+.content img {
+  max-width: 100%;
+  size: 10%;
+  height: auto;
+  display: block;
+  margin: 18px 0;
+  border-radius: 6px;
+}
+
+
+.gallery {
+  display: flex;
+  gap: 12px;               
+  margin: 18px 0;
+  flex-wrap: wrap;         
+}
+
+.gallery img {
+  flex: 1 1 calc((100% - 24px) / 3); 
+  max-width: calc((100% - 24px) / 3);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#p-home {
+  margin-bottom: 20px;
+}
+.btn-home {
+  display: block;
+  background-color: #222;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn-home a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery img {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+}
+

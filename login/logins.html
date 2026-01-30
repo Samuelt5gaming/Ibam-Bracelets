@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="logins.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/password-validator.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in</title>
+</head>
+<body>
+    <div class="login-container">
+        <a href="/index.html" class="back-btn" title="Back to Home">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h2>Login </h2>
+        <form action="dashboard.html" method="post" class="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password-feedback" aria-live="polite" class="password-feedback">
+                <ul class="pw-checklist">
+                    <li data-check="length"><span class="icon">✖</span> At least 6 characters</li>
+                    <li data-check="upper"><span class="icon">✖</span> Uppercase letter</li>
+                    <li data-check="lower"><span class="icon">✖</span> Lowercase letter</li>
+                    <li data-check="number"><span class="icon">✖</span> Number</li>
+                    <li data-check="special"><span class="icon">✖</span> Special character</li>
+                </ul>
+            </div>
+            <br>
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+    <p>Don't have an account? <a href="/register/registration.html">Register here</a></p>
+    </div>
+
+
+    <script src="/assets/js/password-validator.js"></script>
+    <script src="logins.js"></script>
+    <script src="/assets/js/profile.js"></script>
+        <footer class="site-footer">
+            <div class="container">© 2025 IBAMS — All rights reserved.</div>
+        </footer>
+</body>
+</html>

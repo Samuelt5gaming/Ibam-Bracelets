@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/products/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/cart/style.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">
+            <h2>IBAMS <br>BRACELETS</h2>
+            <p>THE HOME OF COMFORT</p>
+        </div>
+        <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/product/products.html">Products</a>
+            <a href="/contact/contacts.html">Contact</a>
+            <div class="form">
+                <a href="/login/logins.html">Login</a>
+                <a href="/register/registration.html">Register</a>
+            </div>
+            <a href="/cart/carts.html" class="cart" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+            </a>
+            <div class="profile"><img src="" alt=""></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h3>Your Cart</h3>
+            <p>Review items before checkout.</p>
+        </div>
+
+        <div class="main" id="cart-main">
+        </div>
+    </div>
+
+    <script src="/assets/js/profile.js"></script>
+    <script src="/assets/js/nav-offset.js"></script>
+    <script src="/assets/js/cart-badge.js"></script>
+    <script src="/assets/js/cart-notify.js"></script>
+    <script src="carts.js"></script>
+        <footer class="site-footer">
+            <div class="container">© 2025 IBAMS — All rights reserved.</div>
+        </footer>
+</body>
+</html>
